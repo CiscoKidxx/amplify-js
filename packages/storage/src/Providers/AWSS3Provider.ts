@@ -349,6 +349,8 @@ export default class AWSS3Provider implements StorageProvider{
                 return privatePath;
             case 'protected':
                 return protectedPath;
+            case 'none':
+                return "";
             default:
                 return publicPath;
         }
